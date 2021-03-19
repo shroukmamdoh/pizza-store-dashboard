@@ -17,6 +17,7 @@ import {
 import { AppRoutingModule } from './app-routing.module';
 import { ProductsModule } from './modules/products/products.module';
 import { SharedModule } from './modules/shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -36,7 +37,9 @@ import { SharedModule } from './modules/shared/shared.module';
     NbSidebarModule,
     AppRoutingModule,
     NbMenuModule.forRoot(),
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

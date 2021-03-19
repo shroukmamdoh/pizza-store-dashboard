@@ -3,7 +3,15 @@
   background-color: #ffffff;
   margin-top: 20px;
   padding: 14px;
-  display: flex;
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    nb-icon {
+      width: 24px;
+      height: 26px;
+    }
+  }
   .items {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +19,37 @@
       max-width: 648px;
       width: 100%;
       margin-right: 20px;
+    }
+  }
+}
+
+nb-card {
+  width: 500px !important;
+  nb-card-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    span {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  nb-card-body {
+    form {
+      input {
+        margin-bottom: 12px;
+      }
+      .msg-error {
+        margin-top: -6px;
+        margin-bottom: 6px;
+        font-size: 12px;
+        margin-left: 16px;
+        color: red;
+      }
     }
   }
 }

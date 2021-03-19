@@ -4,7 +4,8 @@ import { ProductsListComponent } from './components/products-list/products-list.
 import { ProductsItemComponent } from './components/products-item/products-item.component';
 import { ProductsRoutingModule } from './products-routing.module';
 import { SharedModule } from '../shared/shared.module';
-import { NbCardModule, NbIconModule, NbLayoutModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbDialogModule, NbIconModule, NbInputModule, NbLayoutModule, NbToastrModule } from '@nebular/theme';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [ProductsListComponent, ProductsItemComponent],
@@ -14,7 +15,13 @@ import { NbCardModule, NbIconModule, NbLayoutModule } from '@nebular/theme';
     NbCardModule,
     SharedModule,
     NbLayoutModule,
-    NbIconModule
+    NbIconModule,
+    NbButtonModule,
+    NbDialogModule.forRoot(),
+    NbToastrModule.forRoot(),
+    NbInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [ProductsListComponent],
 })

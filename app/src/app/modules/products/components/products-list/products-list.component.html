@@ -1,8 +1,94 @@
 <app-header [title]="'Products'" icon="grid-outline"></app-header>
 <div class="content">
+  <div class="top-nav">
+    <button nbButton status="primary" size="small" (click)="openDialog(dialog)">
+      <nb-icon icon="plus-square-outline"></nb-icon> Add product
+    </button>
+  </div>
   <div class="items">
     <div class="item" *ngFor="let product of products">
       <app-products-item [product]="product"></app-products-item>
     </div>
   </div>
 </div>
+<ng-template #dialog let-data let-ref="dialogRef">
+  <nb-card>
+    <nb-card-header
+      ><span (click)="ref.close()"
+        ><nb-icon icon="close-outline"></nb-icon></span
+    ></nb-card-header>
+    <nb-card-body>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+          <input
+            type="text"
+            formControlName="name"
+            class="form-control"
+            id="name"
+            nbInput
+            fullWidth
+            status="basic"
+            placeholder="product name.."
+          />
+          <div *ngIf="f.name.touched && f.name.invalid" class="msg-error">
+            <div *ngIf="f.name.errors.required">Name is required.</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            formControlName="price"
+            class="form-control"
+            id="price"
+            nbInput
+            fullWidth
+            status="basic"
+            placeholder="product price.."
+          />
+          <div *ngIf="f.price.touched && f.price.invalid" class="msg-error">
+            <div *ngIf="f.price.errors.required">Price is required.</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            formControlName="quantity"
+            class="form-control"
+            id="quantity"
+            nbInput
+            fullWidth
+            status="basic"
+            placeholder="product quantity.."
+          />
+          <div
+            *ngIf="f.quantity.touched && f.quantity.invalid"
+            class="msg-error"
+          >
+            <div *ngIf="f.quantity.errors.required">quantity is required.</div>
+          </div>
+          <div class="form-group">
+            <textarea
+              type="text"
+              nbInput
+              fullWidth
+              class="form-control"
+              id="desc"
+              formControlName="desc"
+              placeholder="description.."
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </nb-card-body>
+    <nb-card-footer>
+      <button
+        status="primary"
+        nbButton
+        fullWidth
+        (click)="submit(); ref.close()"
+      >
+        Add
+      </button>
+    </nb-card-footer>
+  </nb-card>
+</ng-template>
