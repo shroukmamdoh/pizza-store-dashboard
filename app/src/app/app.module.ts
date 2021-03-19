@@ -5,13 +5,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbIconModule, NbCardModule, NbButtonModule, NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbIconModule, NbCardModule, NbButtonModule, NbThemeModule, NbLayoutModule, NbSidebarModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductsModule } from './modules/products/products.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    NbSidebarModule.forRoot(),
     BrowserModule,
     NbEvaIconsModule,
     NbIconModule,
@@ -23,7 +24,9 @@ import { ProductsModule } from './modules/products/products.module';
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
     ProductsModule,
+    NbSidebarModule,
     AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

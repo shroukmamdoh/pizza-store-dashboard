@@ -1,16 +1,16 @@
 <nb-layout>
+  <nb-sidebar>
+    <button nbButton status="success" size="tiny" (click)="toggleCompact()">
+      Toggle
+    </button>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+  </nb-sidebar>
 
-  <nb-layout-header fixed>
-  <!-- Insert header here -->
-  </nb-layout-header>
-
-  <nb-layout-column>
-    <app-products-list></app-products-list>
-    <router-outlet></router-outlet>
-  </nb-layout-column>
-
-  <nb-layout-footer fixed>
-  <!-- Insert footer here -->
-  </nb-layout-footer>
-
+  <nb-layout-column class="colored-column-warning"
+    >Layout Content</nb-layout-column
+  >
 </nb-layout>
