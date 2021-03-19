@@ -1,0 +1,20 @@
+.header {
+  background: #ffff;
+  padding: 14px;
+  border-radius: 2px;
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    nb-icon {
+      color: #96a1b7;
+      width: 40px;
+      height: 26px;
+    }
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+  }
+}

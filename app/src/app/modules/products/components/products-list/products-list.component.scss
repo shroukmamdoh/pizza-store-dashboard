@@ -1,0 +1,16 @@
+.content {
+  min-height: 89vh;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 14px;
+  display: flex;
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      max-width: 648px;
+      width: 100%;
+      margin-right: 20px;
+    }
+  }
+}

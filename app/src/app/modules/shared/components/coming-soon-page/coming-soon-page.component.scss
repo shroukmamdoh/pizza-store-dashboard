@@ -1,0 +1,21 @@
+.content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 89vh;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 14px;
+  display: flex;
+  .image {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    display: block;
+    font-size: 45px;
+    line-height: 70px;
+    color: #40485e;
+    font-weight: 400;
+  }
+}

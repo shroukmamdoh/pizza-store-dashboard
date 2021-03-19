@@ -16,6 +16,7 @@ import {
 } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductsModule } from './modules/products/products.module';
+import { SharedModule } from './modules/shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -35,6 +36,7 @@ import { ProductsModule } from './modules/products/products.module';
     NbSidebarModule,
     AppRoutingModule,
     NbMenuModule.forRoot(),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],

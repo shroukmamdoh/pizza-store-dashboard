@@ -1,0 +1,47 @@
+nb-card {
+  nb-card-header {
+    span {
+      margin-right: 80px;
+    }
+    span.delete-icon {
+      color: #d30a14;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      float: right;
+      margin-right: 0px;
+      nb-icon {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+  nb-card-body {
+    display: flex;
+    .product-image {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border: 1px solid #e9edf4;
+      border-radius: 4px;
+      margin-right: 18px;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: fill;
+        border-radius: 4px;
+      }
+    }
+    .info {
+      padding: 12px 0px;
+      .product-name {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      .product-desc {
+        line-height: 22px;
+      }
+    }
+  }
+}

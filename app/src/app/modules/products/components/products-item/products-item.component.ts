@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import * as products from '../../../../../assets/mocked-data/products.json';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from '../../models/product.model';
 @Component({
   selector: 'app-products-item',
   templateUrl: './products-item.component.html',
   styleUrls: ['./products-item.component.scss'],
 })
 export class ProductsItemComponent implements OnInit {
-  products: any = (products as any).default;
+  @Input()
+  product: Product
   constructor() {}
 
   ngOnInit(): void {
-    console.log('data', this.products);
   }
 }

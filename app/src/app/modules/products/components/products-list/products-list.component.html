@@ -1,1 +1,8 @@
-<app-products-item></app-products-item>
+<app-header [title]="'Products'" icon="grid-outline"></app-header>
+<div class="content">
+  <div class="items">
+    <div class="item" *ngFor="let product of products">
+      <app-products-item [product]="product"></app-products-item>
+    </div>
+  </div>
+</div>
