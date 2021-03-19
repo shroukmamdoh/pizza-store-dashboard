@@ -1,0 +1,9 @@
+// $layout-background: #F1F2F4;
+
+@mixin base-font($size: 14px, $weight : normal, $lineHeight: normal) {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: $lineHeight;
+  font-size: $size;
+  font-weight: $weight;
+}
