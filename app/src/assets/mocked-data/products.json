@@ -1,0 +1,58 @@
+[
+  {
+    "code": 1,
+    "name": "Pepperoni",
+    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+    "price": 50,
+    "imageUrl": "",
+    "quantity": 150
+  },
+  {
+    "code": 2,
+    "name": "Glute-Free Pizza",
+    "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra.",
+    "price": 40,
+    "imageUrl": "",
+    "quantity": 500
+  },
+  {
+    "code": 3,
+    "name": "Pepperoni spicy",
+    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+    "price": 80,
+    "imageUrl": "",
+    "quantity": 200
+  },
+  {
+    "code": 10,
+    "name": "Mozarella",
+    "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra...",
+    "price": 50,
+    "imageUrl": "",
+    "quantity": 150
+  },
+  {
+    "code": 20,
+    "name": "Burrata",
+    "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra.",
+    "price": 40,
+    "imageUrl": "",
+    "quantity": 500
+  },
+  {
+    "code": 30,
+    "name": "Burrata spicy",
+    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+    "price": 80,
+    "imageUrl": "",
+    "quantity": 200
+  },
+  {
+    "code": 40,
+    "name": "Vegetarian Pizza",
+    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+    "price": 80,
+    "imageUrl": "",
+    "quantity": 200
+  }
+]

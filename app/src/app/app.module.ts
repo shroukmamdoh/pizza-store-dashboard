@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbIconModule, NbCardModule, NbButtonModule, NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductsModule } from './modules/products/products.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
+    ProductsModule,
     AppRoutingModule,
   ],
   providers: [],
