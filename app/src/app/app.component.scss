@@ -1,3 +1,56 @@
-::deep nb-sidebar .main-container-fixed {
-  top: 0px !important;
+.sidebar-content {
+  button {
+    background-color: #d81827 !important;
+    color: #ffffff;
+    padding: 2px !important;
+    nb-icon {
+      color: #ffffff !important;
+      width: 20px !important;
+      height: 23px !important;
+    }
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  .divider {
+    position: relative;
+    margin-top: 22px;
+    margin-bottom: 30px;
+    height: 1px;
+  }
+
+  .divider:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -9px;
+    left: calc(50% - 9px);
+    width: 18px;
+    height: 18px;
+    background-color: goldenrod;
+    border: 1px solid rgb(48, 49, 51);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+  }
+
+  .divider:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgb(48, 49, 51),
+      transparent
+    );
+  }
 }

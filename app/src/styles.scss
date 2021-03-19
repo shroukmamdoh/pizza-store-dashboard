@@ -1,6 +1,6 @@
 @import 'themes';
 @import '~@nebular/theme/styles/globals';
-@import './app/styles/_variables';
+@import './styles/_mixins';
 @import '~roboto-fontface/css/roboto/roboto-fontface.css';
 @include nb-install() {
   @include nb-theme-global();
@@ -12,4 +12,12 @@
 
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.left-sidebar div.main-container.main-container-fixed {
+  position: inherit !important;
+}
+
+.menu-item a .menu-title {
+  margin-top: 6px !important;
 }

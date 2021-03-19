@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NbSidebarService } from '@nebular/theme';
+import { NbMenuItem } from '@nebular/theme';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,13 +7,22 @@ import { NbSidebarService } from '@nebular/theme';
 })
 export class AppComponent {
   title = 'app';
-  constructor(private sidebarService: NbSidebarService) {
-  }
-  // toggle() {
-  //   this.sidebarService.toggle(false, 'left');
-  // }
-
-  toggleCompact() {
-    this.sidebarService.toggle(true, 'left');
-  }
+  items: NbMenuItem[] = [
+    {
+      title: 'Dashboard',
+      icon: 'home-outline',
+      link: 'dashboard',
+    },
+    {
+      title: 'Products',
+      icon: 'grid-outline',
+      link: 'products',
+    },
+    {
+      title: 'Users',
+      icon: 'people-outline',
+      link: 'users',
+    },
+  ];
+  constructor() {}
 }

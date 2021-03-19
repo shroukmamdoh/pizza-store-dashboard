@@ -5,7 +5,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbIconModule, NbCardModule, NbButtonModule, NbThemeModule, NbLayoutModule, NbSidebarModule } from '@nebular/theme';
+import {
+  NbIconModule,
+  NbCardModule,
+  NbButtonModule,
+  NbThemeModule,
+  NbLayoutModule,
+  NbSidebarModule,
+  NbMenuModule,
+} from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductsModule } from './modules/products/products.module';
 
@@ -26,7 +34,7 @@ import { ProductsModule } from './modules/products/products.module';
     ProductsModule,
     NbSidebarModule,
     AppRoutingModule,
-
+    NbMenuModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

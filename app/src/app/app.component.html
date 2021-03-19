@@ -1,16 +1,15 @@
 <nb-layout>
-  <nb-sidebar>
-    <button nbButton status="success" size="tiny" (click)="toggleCompact()">
-      Toggle
-    </button>
-    <ul>
-      <li>one</li>
-      <li>two</li>
-      <li>three</li>
-    </ul>
+  <nb-sidebar class="left-sidebar">
+    <div class="sidebar-content">
+      <div class="logo">
+        <img src="../assets/images/logoV1.png" />
+      </div>
+      <div class="divider"></div>
+      <nb-menu [items]="items" active></nb-menu>
+    </div>
   </nb-sidebar>
 
-  <nb-layout-column class="colored-column-warning"
-    ><router-outlet></router-outlet></nb-layout-column
-  >
+  <nb-layout-column class="colored-column-warning">
+    <router-outlet></router-outlet
+  ></nb-layout-column>
 </nb-layout>
