@@ -6,7 +6,7 @@
     </button>
   </div>
   <div class="items">
-    <div class="item" *ngFor="let product of products">
+    <div class="item" *ngFor="let product of products.data">
       <app-products-item [product]="product"></app-products-item>
     </div>
   </div>
@@ -85,6 +85,7 @@
         status="primary"
         nbButton
         fullWidth
+        [disabled]="!form.valid"
         (click)="submit(); ref.close()"
       >
         Add

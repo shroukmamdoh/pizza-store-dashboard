@@ -1,58 +1,60 @@
-[
-  {
-    "code": 1,
-    "name": "Pepperoni",
-    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
-    "price": 50,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_25EaiPYPjBfOedTGeYMdKf1UcAEJ-rtRg&usqp=CAU",
-    "quantity": 150
-  },
-  {
-    "code": 2,
-    "name": "Glute-Free Pizza",
-    "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra.",
-    "price": 40,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4h2WC35k0nUcgmPFCeEhcXr1_Bt3i7cV7g&usqp=CAU",
-    "quantity": 500
-  },
-  {
-    "code": 3,
-    "name": "Pepperoni spicy",
-    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
-    "price": 80,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3DZu5ZNIOHzR82UOPZmr7KTH6nqA06-hIg&usqp=CAU",
-    "quantity": 200
-  },
-  {
-    "code": 10,
-    "name": "Mozarella",
-    "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra...",
-    "price": 50,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCoNpz1k76qmjpS0nVIlzzsNY4IPyDalsywA&usqp=CAU",
-    "quantity": 150
-  },
-  {
-    "code": 20,
-    "name": "Burrata",
-    "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra.",
-    "price": 40,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQfRdOfhXgW3GFW_XygHRiEzk9Jb2aW-h7A&usqp=CAU",
-    "quantity": 500
-  },
-  {
-    "code": 30,
-    "name": "Burrata spicy",
-    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
-    "price": 80,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCobokss1n7Ig9NlSxj7z6NS0t9HGWJVa_A&usqp=CAU",
-    "quantity": 200
-  },
-  {
-    "code": 40,
-    "name": "Vegetarian Pizza",
-    "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
-    "price": 80,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkcXTrD_bjnlvMFViPZ34kj-3mQpUnsq0HQ&usqp=CAU",
-    "quantity": 200
-  }
-]
+{
+  "data": [
+    {
+      "code": 1,
+      "name": "Pepperoni",
+      "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+      "price": 50,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_25EaiPYPjBfOedTGeYMdKf1UcAEJ-rtRg&usqp=CAU",
+      "quantity": 150
+    },
+    {
+      "code": 2,
+      "name": "Glute-Free Pizza",
+      "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra.",
+      "price": 40,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4h2WC35k0nUcgmPFCeEhcXr1_Bt3i7cV7g&usqp=CAU",
+      "quantity": 500
+    },
+    {
+      "code": 3,
+      "name": "Pepperoni spicy",
+      "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+      "price": 80,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3DZu5ZNIOHzR82UOPZmr7KTH6nqA06-hIg&usqp=CAU",
+      "quantity": 200
+    },
+    {
+      "code": 10,
+      "name": "Mozarella",
+      "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra...",
+      "price": 50,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCoNpz1k76qmjpS0nVIlzzsNY4IPyDalsywA&usqp=CAU",
+      "quantity": 150
+    },
+    {
+      "code": 20,
+      "name": "Burrata",
+      "description": "Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra.",
+      "price": 40,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQfRdOfhXgW3GFW_XygHRiEzk9Jb2aW-h7A&usqp=CAU",
+      "quantity": 500
+    },
+    {
+      "code": 30,
+      "name": "Burrata spicy",
+      "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+      "price": 80,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCobokss1n7Ig9NlSxj7z6NS0t9HGWJVa_A&usqp=CAU",
+      "quantity": 200
+    },
+    {
+      "code": 40,
+      "name": "Vegetarian Pizza",
+      "description": "Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere...",
+      "price": 80,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkcXTrD_bjnlvMFViPZ34kj-3mQpUnsq0HQ&usqp=CAU",
+      "quantity": 200
+    }
+  ]
+}
