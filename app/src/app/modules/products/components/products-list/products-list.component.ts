@@ -5,7 +5,6 @@ import {
   TemplateRef,
 } from '@angular/core';
 import { NbDialogService, NbToastrService } from '@nebular/theme';
-import { ProductService } from '../../services/product.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
@@ -21,12 +20,11 @@ export class ProductsListComponent implements OnInit {
   form = new FormGroup({
     name: new FormControl('', [Validators.required]),
     price: new FormControl('', [Validators.required]),
-    code: new FormControl(''),
+    code: new FormControl(this.makeRandomCode(), [Validators.required]),
     desc: new FormControl(''),
     quantity: new FormControl('', [Validators.required]),
   });
   constructor(
-    private productService: ProductService,
     private dialogService: NbDialogService,
     private toastrService: NbToastrService,
     private http: HttpClient
@@ -42,12 +40,12 @@ export class ProductsListComponent implements OnInit {
 
   submit() {
     const data = this.products.data;
-    this.form.value.code = this.makeRandomCode()
     if (this.form.valid) {
       data.push(this.form.value);
       this.products.data = data;
       console.log('form data', this.products);
       this.resetValue();
+      this.toastrService.success('Product has been added', 'Congratulations')
     }
   }
   resetValue() {
